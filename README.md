@@ -1,4 +1,3 @@
-//ตาราง DB ใช้ MySQL
 CREATE TABLE `users` (
 	`id` INT(10) UNSIGNED NOT NULL AUTO_INCREMENT,
 	`username` VARCHAR(100) NULL DEFAULT NULL COLLATE 'utf8mb4_general_ci',
