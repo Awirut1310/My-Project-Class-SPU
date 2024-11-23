@@ -83,7 +83,7 @@
       </form>
     </main>
 
-    <img src="../img/bg-login-1.jpg" alt="">
+    <img src="../img/bg-login-1.jpg" alt="" class="d-none d-lg-block">
   </div>
 
 

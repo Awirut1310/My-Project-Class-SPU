@@ -21,7 +21,7 @@
 <body >
 
   <div class="d-flex h-100 w-100 ">
-    <img src="../img/bg-login-1.jpg" alt="">
+    <img src="../img/bg-login-1.jpg" alt="" class="d-none d-lg-block">
 
     <main class="form-signin d-flex flex-column justify-content-center align-items-center vh-100 m-auto ">
 
