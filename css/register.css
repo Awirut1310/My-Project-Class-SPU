@@ -1,0 +1,22 @@
+html,
+body {
+  height: 100%;
+}
+
+.form-signin {
+  max-width: 330px;
+  padding: 1rem;
+}
+
+.form-signin .form-floating:focus-within {
+  z-index: 2;
+}
+
+
+.spacing {
+  width: 50px;
+  border-radius: 1000px;
+  height: 4px;
+  background: #198754;
+  margin: 12px;
+}

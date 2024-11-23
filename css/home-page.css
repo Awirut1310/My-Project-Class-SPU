@@ -1,0 +1,445 @@
+
+/* scroll smooth */
+html {
+  scroll-behavior: smooth;
+}
+
+/* hidden scroll bar*/
+::-webkit-scrollbar {
+  display: none;
+}
+
+
+/* navbar */
+.navbar {
+    background: rgba(0, 0, 0, 0.9);
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+/* ชื่อแบลน */
+.brand-name {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white; 
+    text-transform: uppercase;
+}
+
+/* navbar item */
+.navbar-nav .nav-link {
+    color: white;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding: 0 15px;
+    transition: color 0.3s ease;
+}
+
+/* hover navbar item */
+.navbar-nav .nav-link:hover {
+    color: #2b87f7;
+}
+
+/* ตำแหน่งของรูปภาพ */
+.carousel-inner img {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+    filter: brightness(80%);
+}
+
+/* ตำแหน่งของตัวอักษร */
+.carousel-caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 60%;
+}
+
+/* ขนาดภาพและตัวอักษรเริ่มต้น */
+.service-img {
+  width: 100px;
+}
+
+.service-text {
+  font-size: 1.25rem; /* ขนาดเริ่มต้น */
+}
+
+.footer-container {
+    display: flex;
+    height: 300px;
+    background: #000;
+  }
+
+  .image-footer {
+    width: 100%;
+  }
+  
+  .image-footer img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .info-footer {
+    display: flex;
+    justify-content: space-around;
+    align-self: center;
+    width: 100%;
+    height: 100%;
+    gap: 2.5rem;
+  }
+
+  #services-section {
+    scroll-margin-top: 50vh;
+  }
+  #about-section {
+    scroll-margin-top: 20vh;
+  }
+  
+  .logo-taxify {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid; */
+  }
+  
+  .info-footer img {
+    width: 100px;
+    height: auto;
+  }
+  
+  .info-taxify {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  
+  .logo-taxify a {
+    text-decoration: none;
+    font-size: 24px;
+    color: #ffffff;
+  }
+  
+  .info-about {
+    padding: 0 16px;
+    width: 300px;
+      p {
+        font-size: 12px;
+        color: #ffffff;
+        text-align: center;
+        font-weight: 100;
+      }
+  }
+  
+  .info-contact {
+    display: flex;
+    gap: 2rem;;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .info-contact ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+     li a {
+      text-decoration: none;
+      color: #ffffff;
+      font-size: 12px;
+     }
+  }
+  
+  .info-contact-2 {
+    background: #000;
+    display: none;
+  }
+  
+.info-contact-2 ul{
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding: 1rem;
+    li {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+        a {
+          text-decoration: none;
+          color: #ffffff;
+          font-size: 12px;
+            img {
+              width: 20px;
+            }
+        }
+    }
+}
+  
+  .icon-contact {
+    display: inline-flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .icon-contact img{
+    width: 20px;
+  }
+
+  /* CSS ปรับหัวข้อให้อยู่ด้านบน */
+#about-section h1 {
+  margin-top: 0; /* ลบระยะห่างด้านบนทั้งหมด */
+  padding-top: 10px; /* เพิ่มระยะเล็กน้อยด้านบน (ถ้าจำเป็น) */
+  position: relative; /* เพื่อให้สามารถปรับตำแหน่งได้ */
+  top: -70px; /* เลื่อนขึ้นด้านบน (ปรับค่าตามที่ต้องการ) */
+  text-align: center; /* ยังคงอยู่ตรงกลาง */
+  font-size: 3.5rem; /* กำหนดขนาดตัวอักษร */
+  color: white; /* สีข้อความ */
+}
+
+
+.member {
+  position: relative; /* กำหนดให้ tooltip วางตามสมาชิก */
+}
+
+.tooltip-boxs {
+  position: absolute;
+  top: 0;
+  left: 120%; /* ด้านขวาของวงกลม */
+  width: 300px;
+  padding: 10px;
+  background-color: #333;
+  color: #fff;
+  border-radius: 5px;
+  display: none; /* ซ่อนตอนเริ่ม */
+  font-size: 10px;
+  z-index: 10;
+}
+
+.member:hover .tooltip-boxs {
+  display: block; /* แสดง tooltip เมื่อ hover */
+}
+
+.circle {
+  width: 150px; 
+  height: 150px;
+  border-radius: 50%;
+  overflow: hidden; 
+  background-size: cover; 
+  background-position: center; 
+}
+
+#about-section {
+  margin-top: 50px; 
+}
+
+
+.member {
+position: relative;
+display: inline-block;
+margin-right: 20px; 
+margin-bottom: 30px; 
+width: 150px; 
+height: 150px; 
+border-radius: 50%; 
+background-image: url(1image.jpg); 
+background-size: cover; 
+background-position: center;
+
+
+}
+
+
+
+.tooltip-box {
+display: none;
+position: absolute;
+top: 100%;  
+left: 50%;  
+transform: translateX(-50%); 
+background-color: #333;
+color: white;
+padding: 10px;
+border-radius: 5px;
+width: 300px; 
+z-index: 10;
+font-size: 10px;
+text-align: center; 
+margin-top: 10px;  
+}
+
+
+.member:hover .tooltip-box {
+display: block;
+}
+
+
+.row {
+display: flex;
+flex-wrap: wrap; 
+justify-content: space-between; 
+}
+  
+  
+  /* responsive for ipad */
+  @media only screen and (max-width: 990px){
+    .about-container p {
+      margin-bottom: 2rem;
+    }
+
+    service-img {
+      width: 75px;
+    }
+    
+    .service-text {
+      font-size: 1rem;
+    }
+
+    .menu {
+      display: none;
+    }
+
+    .carousel-caption h1 {
+      font-size: 3rem;
+    }
+
+    .carousel-caption h6 {
+      font-size: 0.875rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+    p {
+        font-size: 0.74rem;
+    }
+  
+    .info-contact{
+      display: none;
+    }
+  
+    .info-contact-2 {
+      display: block;
+      overflow: hidden;
+    }
+  
+    .wrapper {
+      display: inline-block;
+    }
+  
+    .text-wrapper {
+      padding: 32px;
+    }
+  
+    .text-wrapper h1 {
+      width: 100%;
+      font-size: 32px;
+    }
+  
+  }
+  /* end responsive */
+  
+  
+  /* responsive for mobile */
+  @media only screen and (max-width: 480px){
+    .service-img {
+      width: 50px;
+    }
+
+    .service-text {
+      font-size: 0.875rem;
+    }
+
+    .btn-doc {
+      display: none;
+    }
+    
+    .info-contact{
+      display: flex;
+    }
+  
+    .info-about {
+      display: none;
+    }
+  
+    .image-footer {
+      display: none;
+    }
+  
+    .info-contact-2 {
+      display: none;
+    }
+  
+    .menu {
+      display: none;
+    }
+  
+    .wrapper {
+      display: inline-block;
+    }
+  
+    .text-wrapper {
+      padding: 32px;
+    }
+  
+    .text-wrapper h1 {
+      width: 100%;
+      font-size: 32px;
+      animation: slide-fade .3s ease infinite;
+    }
+  
+  }
+  /* end responsive */
+
+  /* animation  */
+@keyframes slide-fade-left {
+  0% {
+    opacity: 0;
+    scale: 0.7;
+    transform: translateX(-50px);
+  }
+  100% {
+    opacity: 1;
+    scale: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slide-fade-right {
+  0% {
+    opacity: 0;
+    scale: 0.7;
+    transform: translateX(50px);
+  }
+  100% {
+    opacity: 1;
+    scale: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fade-bot-top {
+  0% {
+    opacity: 0;
+    scale: 0.7;
+    transform: translateY(-50px);
+  }
+  100% {
+    opacity: 1;
+    scale: 1;
+    transform: translateY(0);
+  }
+}
+
+#popup:hover {
+  scale: 110%;
+}
