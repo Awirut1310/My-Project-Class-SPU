@@ -1,0 +1,13 @@
+//ตาราง DB ใช้ MySQL
+CREATE TABLE `users` (
+	`id` INT(10) UNSIGNED NOT NULL AUTO_INCREMENT,
+	`username` VARCHAR(100) NULL DEFAULT NULL COLLATE 'utf8mb4_general_ci',
+	`email` VARCHAR(100) NULL DEFAULT NULL COLLATE 'utf8mb4_general_ci',
+	`password` VARCHAR(255) NULL DEFAULT NULL COLLATE 'utf8mb4_general_ci',
+	`created_at` TIMESTAMP NULL DEFAULT NULL,
+	PRIMARY KEY (`id`) USING BTREE
+)
+COLLATE='utf8mb4_general_ci'
+ENGINE=InnoDB
+AUTO_INCREMENT=7
+;
